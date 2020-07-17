@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1019.2,822.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1029.6,606.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -75,11 +75,8 @@
       <Variable x:TypeArguments="x:Int32" Name="total_month" />
       <Variable x:TypeArguments="ui:Browser" Name="chrome_browser_master" />
       <Variable x:TypeArguments="x:String" Name="country" />
-      <Variable x:TypeArguments="x:Int32" Name="count_a" />
-      <Variable x:TypeArguments="x:Int32" Name="count_i" />
       <Variable x:TypeArguments="x:Int32" Name="current_year" />
       <Variable x:TypeArguments="x:Int32" Name="current_month" />
-      <Variable x:TypeArguments="x:String" Default="1" Name="number_1" />
       <Variable x:TypeArguments="x:Int32" Name="count" />
       <Variable x:TypeArguments="x:String" Name="directory_name" />
       <Variable x:TypeArguments="x:String" Name="country_code" />
@@ -108,10 +105,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence sap2010:Annotation.AnnotationText="한 파일 마다 브라우저를 열고 정보를 기입하여 다운로드 받고 닫는다." DisplayName="download" sap:VirtualizedContainerService.HintSize="200,140.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="x:Boolean" Name="need_login" />
-          <Variable x:TypeArguments="x:String" Name="variable1" />
-        </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -778,7 +771,7 @@
           <av:PointCollection x:Key="ConnectorLocation">200,250 230,250 230,113.2 370,113.2 370,143.2</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="데이트 타입은 &#xA;D : daily&#xA;W : weekly&#xA;M : monthly 이며&#xA;&#xA;D,W에 대한 구현은 아직 미구현.&#xA;&#xA;이후엔 시작 연월/ 마지막 연월을 입력받고 총 몇개의 파일을 다운 받는지 알린다." DisplayName="select_date_type" sap:VirtualizedContainerService.HintSize="200,269.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap2010:Annotation.AnnotationText="데이트 타입은 &#xA;D : daily&#xA;W : weekly&#xA;M : monthly 이며&#xA;&#xA;D,W에 대한 구현은 아직 미구현.&#xA;&#xA;이후엔 시작 연월/ 마지막 연월을 입력받고 총 몇개의 파일을 다운 받는지 알린다." DisplayName="select_date_type" sap:VirtualizedContainerService.HintSize="241.6,720.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -786,7 +779,7 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Flowchart sap2010:Annotation.AnnotationText="D 는 daily&#xA;W 는 weekly&#xA;M 는 Monthly 입력받기" DisplayName="input_date_type" sap:VirtualizedContainerService.HintSize="653.6,704" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+        <Flowchart sap2010:Annotation.AnnotationText="D 는 daily&#xA;W 는 weekly&#xA;M 는 Monthly 입력받기" DisplayName="input_date_type" sap:VirtualizedContainerService.HintSize="200,122.4" sap2010:WorkflowViewState.IdRef="Flowchart_2">
           <Flowchart.Variables>
             <Variable x:TypeArguments="x:String" Name="check_date_type" />
           </Flowchart.Variables>
@@ -883,7 +876,7 @@
           <x:Reference>__ReferenceID3</x:Reference>
           <x:Reference>__ReferenceID4</x:Reference>
         </Flowchart>
-        <Sequence sap2010:Annotation.AnnotationText="시작 연 월 일을 입력 받는 작업.&#xA;&#xA;date_type에 따라 필요한 연월일이 다르다. daily weekly는 미구현 상태. &#xA;**date_type의 default는 M으로 해놓았음.&#xA;** 아직 end date 가 start 보다 뒤에 있는 날짜인지 확인하는 작업이 없습니다. 에러나지 않게 주의하세요" DisplayName="date_input" sap:VirtualizedContainerService.HintSize="200,288" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence sap2010:Annotation.AnnotationText="시작 연 월 일을 입력 받는 작업.&#xA;&#xA;date_type에 따라 필요한 연월일이 다르다. daily weekly는 미구현 상태. &#xA;**date_type의 default는 M으로 해놓았음.&#xA;** 아직 end date 가 start 보다 뒤에 있는 날짜인지 확인하는 작업이 없습니다. 에러나지 않게 주의하세요" DisplayName="date_input" sap:VirtualizedContainerService.HintSize="241.6,516" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1206,7 +1199,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,83.2" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;C:\Users\moons\Desktop\&quot;+country_code+&quot;_&quot;+os_type+&quot;_&quot;+and_type+&quot;_&quot;+start_year.toString+start_month.toString+&quot;_&quot;+end_year.toString+end_month.toString]">
+                    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="261.6,55.2" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[directory_name]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1235,7 +1228,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="261.6,55.2" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[&quot;C:\Users\moons\Desktop\&quot;+country_code+&quot;_&quot;+os_type+&quot;_&quot;+ios_type+&quot;_&quot;+ios_category+&quot;_&quot;+start_year.toString+start_month.toString+&quot;_&quot;+end_year.toString+end_month.toString]">
+                    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="261.6,55.2" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[directory_name]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
